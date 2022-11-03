@@ -1,14 +1,15 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
+  "TaskList": {
+    "title": { "loremWords": { "minLength": 1, "maxLength": 3 } },
+    "tasks": {
+      "hasMany": "Task"
     }
   },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
+  "Task": {
+    "description": { "loremSentences": { "minLength": 1, "maxLength": 7 } },
+    "isDone": { "boolean": {} },
+    "taskList": {
+      "belongsTo": "TaskList"
     }
   }
 }
