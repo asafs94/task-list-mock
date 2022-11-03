@@ -1,5 +1,5 @@
 {
-  "TaskList": {
+  "Tasklist": {
     "title": { "loremWords": { "minLength": 1, "maxLength": 3 } },
     "tasks": {
       "hasMany": "Task"
@@ -9,7 +9,7 @@
     "description": { "loremSentences": { "minLength": 1, "maxLength": 7 } },
     "isDone": { "boolean": {} },
     "taskList": {
-      "belongsTo": "TaskList"
+      "belongsTo": "Tasklist"
     }
   }
 }
