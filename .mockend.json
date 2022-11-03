@@ -8,7 +8,7 @@
   "Task": {
     "description": { "loremSentences": { "minLength": 100, "maxLength": 200 } },
     "isDone": { "boolean": {} },
-    "taskList": {
+    "tasklist": {
       "belongsTo": "Tasklist"
     }
   }
